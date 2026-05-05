@@ -1,11 +1,14 @@
 import { TheoryTestScreen } from '@/components/theory-test-screen';
 
 const FTT_ENDPOINT = 'https://form.gov.sg/api/v3/forms/67d2ad567b868a77419c163b';
+const FTT_HANDBOOK_URL =
+  'https://www.police.gov.sg/-/media/SPF/Knowledge-Hub/Traffic/FT-ENG-2126-Revised.pdf';
 
 export default function FttScreen() {
   return (
     <TheoryTestScreen
       endpoint={FTT_ENDPOINT}
+      handbookUrl={FTT_HANDBOOK_URL}
       title="Final Theory Test"
       subtitle="Choose a section to start a Final Theory Test practice quiz."
       headerBackgroundColor={{ light: '#CDEFF4', dark: '#103038' }}

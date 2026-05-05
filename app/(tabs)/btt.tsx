@@ -1,11 +1,14 @@
 import { TheoryTestScreen } from '@/components/theory-test-screen';
 
 const BTT_ENDPOINT = 'https://form.gov.sg/api/v3/forms/67317e882e2ffcb14032e4a2';
+const BTT_HANDBOOK_URL =
+  'https://www.police.gov.sg/-/media/SPF/Knowledge-Hub/Traffic/BT-ENG-24126.pdf';
 
 export default function BttScreen() {
   return (
     <TheoryTestScreen
       endpoint={BTT_ENDPOINT}
+      handbookUrl={BTT_HANDBOOK_URL}
       title="Basic Theory Test"
       subtitle="Choose a section to start a Basic Theory Test practice quiz."
       headerBackgroundColor={{ light: '#F7D9A8', dark: '#3D2B13' }}

@@ -1,6 +1,7 @@
+import { openBrowserAsync, WebBrowserPresentationStyle } from 'expo-web-browser';
 import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { ActivityIndicator, Pressable, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, Linking, Pressable, StyleSheet, View } from 'react-native';
 
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
@@ -18,6 +19,7 @@ type TheoryTestSection = {
 
 type TheoryTestScreenProps = {
   endpoint: string;
+  handbookUrl: string;
   title: string;
   subtitle: string;
   headerBackgroundColor: { light: string; dark: string };
@@ -47,6 +49,7 @@ function toTheoryTestSections(fields: FormField[]): TheoryTestSection[] {
 
 export function TheoryTestScreen({
   endpoint,
+  handbookUrl,
   title,
   subtitle,
   headerBackgroundColor,
@@ -59,6 +62,16 @@ export function TheoryTestScreen({
   const [error, setError] = useState<string | null>(null);
   const colorScheme = useColorScheme() ?? 'light';
   const isDark = colorScheme === 'dark';
+
+  async function openHandbook() {
+    try {
+      await openBrowserAsync(handbookUrl, {
+        presentationStyle: WebBrowserPresentationStyle.AUTOMATIC,
+      });
+    } catch {
+      await Linking.openURL(handbookUrl);
+    }
+  }
 
   useEffect(() => {
     let isMounted = true;
@@ -113,7 +126,27 @@ export function TheoryTestScreen({
           {title}
         </ThemedText>
       </ThemedView>
-      <ThemedText>{subtitle}</ThemedText>
+
+      <ThemedView style={styles.handbookSection}>
+        <ThemedText type="subtitle">Handbook</ThemedText>
+        <ThemedText>Read the official handbook before practising the questions.</ThemedText>
+        <Pressable
+          onPress={openHandbook}
+          style={({ pressed }) => [
+            styles.handbookButton,
+            { backgroundColor: theme.accent },
+            pressed ? styles.cardPressed : null,
+          ]}>
+          <ThemedText lightColor="#FFFFFF" darkColor="#FFFFFF" style={styles.handbookButtonText}>
+            Open handbook
+          </ThemedText>
+        </Pressable>
+      </ThemedView>
+
+      <ThemedView style={styles.quizHeader}>
+        <ThemedText type="subtitle">Quiz</ThemedText>
+        <ThemedText>{subtitle}</ThemedText>
+      </ThemedView>
 
       {isLoading ? (
         <ThemedView style={styles.statusContainer}>
@@ -137,7 +170,7 @@ export function TheoryTestScreen({
       ) : null}
 
       {!isLoading && !error && sections.length > 0 ? (
-        <View style={styles.grid}>
+        <View style={styles.list}>
           {sections.map((section) => (
             <Pressable
               key={section.id}
@@ -178,10 +211,14 @@ export function TheoryTestScreen({
                     : styles.cardDisabled,
                 pressed ? styles.cardPressed : null,
               ]}>
-              <ThemedText type="subtitle">{section.title}</ThemedText>
-              <ThemedText style={styles.cardMetaText}>
-                {section.formId ? 'Start practice' : 'No quiz available'}
-              </ThemedText>
+              <View style={styles.cardContent}>
+                <ThemedText type="subtitle" style={styles.cardTitle}>
+                  {section.title}
+                </ThemedText>
+                <ThemedText style={[styles.cardMetaText, { color: theme.accent }]}>
+                  {section.formId ? 'Start' : 'Unavailable'}
+                </ThemedText>
+              </View>
             </Pressable>
           ))}
         </View>
@@ -204,17 +241,41 @@ const styles = StyleSheet.create({
     gap: 8,
     paddingVertical: 12,
   },
-  grid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+  handbookSection: {
+    borderRadius: 18,
+    gap: 8,
+    paddingVertical: 4,
+  },
+  handbookButton: {
+    alignItems: 'center',
+    borderRadius: 999,
+    marginTop: 4,
+    paddingVertical: 14,
+  },
+  handbookButtonText: {
+    fontSize: 15,
+    fontWeight: '800',
+  },
+  quizHeader: {
+    gap: 4,
+  },
+  list: {
     gap: 12,
   },
   card: {
     borderRadius: 18,
     borderWidth: 1,
-    minHeight: 132,
     padding: 16,
-    width: '48%',
+    width: '100%',
+  },
+  cardContent: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: 16,
+    justifyContent: 'space-between',
+  },
+  cardTitle: {
+    flex: 1,
   },
   cardDisabled: {
     backgroundColor: '#F0F0F0',
@@ -231,7 +292,6 @@ const styles = StyleSheet.create({
     transform: [{ scale: 0.98 }],
   },
   cardMetaText: {
-    marginTop: 12,
     fontSize: 13,
     fontWeight: '700',
     lineHeight: 18,

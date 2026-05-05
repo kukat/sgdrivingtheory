@@ -1,11 +1,14 @@
 import { TheoryTestScreen } from '@/components/theory-test-screen';
 
 const RTT_ENDPOINT = 'https://form.gov.sg/api/v3/forms/67d2fcd008bae384d0ace35d';
+const RTT_HANDBOOK_URL =
+  'https://www.police.gov.sg/-/media/SPF/Advisories/TP/RT-ENG-2126.pdf';
 
 export default function RttScreen() {
   return (
     <TheoryTestScreen
       endpoint={RTT_ENDPOINT}
+      handbookUrl={RTT_HANDBOOK_URL}
       title="Riding Theory Test"
       subtitle="Choose a section to start a Riding Theory Test practice quiz."
       headerBackgroundColor={{ light: '#D8E7FF', dark: '#10233F' }}
