@@ -1,50 +1,58 @@
-# Welcome to your Expo app 👋
+# Singapore Driving Theory Practice
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Expo app for practising Singapore driving theory tests with section-based quizzes and official handbook links.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Basic Theory Test (BTT), Final Theory Test (FTT), and Riding Theory Test (RTT) tabs.
+- Section lists loaded from public Form.gov.sg form APIs at runtime.
+- One-question-per-page quiz flow with immediate correct/incorrect feedback.
+- Official handbook PDF links opened with an in-app browser when available.
+- Separate visual themes for BTT, FTT, and RTT.
 
-   ```bash
-   npm install
-   ```
+## Data Sources
 
-2. Start the app
+Quiz sections and questions are fetched from public Form.gov.sg endpoints:
 
-   ```bash
-   npx expo start
-   ```
+- BTT: `https://form.gov.sg/api/v3/forms/67317e882e2ffcb14032e4a2`
+- FTT: `https://form.gov.sg/api/v3/forms/67d2ad567b868a77419c163b`
+- RTT: `https://form.gov.sg/api/v3/forms/67d2fcd008bae384d0ace35d`
 
-In the output, you'll find options to open the app in a
+Handbooks are linked from Singapore Police Force public PDFs:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- BTT: `https://www.police.gov.sg/-/media/SPF/Knowledge-Hub/Traffic/BT-ENG-24126.pdf`
+- FTT: `https://www.police.gov.sg/-/media/SPF/Knowledge-Hub/Traffic/FT-ENG-2126-Revised.pdf`
+- RTT: `https://www.police.gov.sg/-/media/SPF/Advisories/TP/RT-ENG-2126.pdf`
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Development
 
-## Get a fresh project
-
-When you're ready, run:
+Install dependencies:
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Start Expo:
 
-## Learn more
+```bash
+npm start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Run checks:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm run lint
+npx tsc --noEmit
+```
 
-## Join the community
+## App Identity
 
-Join our community of developers creating universal apps.
+- iOS bundle identifier: `me.cyao.sgdrivingtheory`
+- Android package: `me.cyao.sgdrivingtheory`
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Project Structure
+
+- `app/(tabs)/btt.tsx`, `ftt.tsx`, `rtt.tsx`: theory-test entry tabs.
+- `components/theory-test-screen.tsx`: shared handbook and section-list screen.
+- `app/quiz/[formId].tsx`: dynamic quiz route for a selected section.
+- `lib/form-gov.ts`: Form.gov.sg response parsing helpers.
