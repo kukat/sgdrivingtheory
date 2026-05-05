@@ -32,10 +32,51 @@ function isCorrectAnswer(selectedAnswer: string, answer: string) {
   return normalizeAnswer(selectedAnswer) === normalizeAnswer(answer);
 }
 
+function getThemeParam(value: string | string[] | undefined, fallback: string) {
+  return getParam(value) ?? fallback;
+}
+
 export default function QuizScreen() {
-  const params = useLocalSearchParams<{ formId?: string; title?: string }>();
+  const params = useLocalSearchParams<{
+    formId?: string;
+    title?: string;
+    accent?: string;
+    screenLight?: string;
+    screenDark?: string;
+    heroLight?: string;
+    heroDark?: string;
+    progressTrackLight?: string;
+    progressTrackDark?: string;
+    optionLight?: string;
+    optionDark?: string;
+    optionBorderLight?: string;
+    optionBorderDark?: string;
+  }>();
   const formId = getParam(params.formId);
   const title = getParam(params.title) ?? 'Practice Quiz';
+  const theme = {
+    accent: getThemeParam(params.accent, '#D67B00'),
+    screen: {
+      light: getThemeParam(params.screenLight, '#F4E8D1'),
+      dark: getThemeParam(params.screenDark, '#0F0D09'),
+    },
+    hero: {
+      light: getThemeParam(params.heroLight, '#FFF9ED'),
+      dark: getThemeParam(params.heroDark, '#17130C'),
+    },
+    progressTrack: {
+      light: getThemeParam(params.progressTrackLight, '#E8D6B9'),
+      dark: getThemeParam(params.progressTrackDark, '#4A3720'),
+    },
+    option: {
+      light: getThemeParam(params.optionLight, '#FFFBF4'),
+      dark: getThemeParam(params.optionDark, '#2A251D'),
+    },
+    optionBorder: {
+      light: getThemeParam(params.optionBorderLight, '#E8D6B9'),
+      dark: getThemeParam(params.optionBorderDark, '#504536'),
+    },
+  };
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, AnswerState>>({});
@@ -136,13 +177,17 @@ export default function QuizScreen() {
           headerBackTitle: '',
         }}
       />
-      <View style={[styles.screen, isDark ? styles.screenDark : styles.screenLight]}>
+      <View
+        style={[
+          styles.screen,
+          { backgroundColor: isDark ? theme.screen.dark : theme.screen.light },
+        ]}>
         <ThemedView
-          lightColor="#FFF9ED"
-          darkColor="#17130C"
+          lightColor={theme.hero.light}
+          darkColor={theme.hero.dark}
           style={[styles.hero, isWide ? styles.heroWide : null]}>
           <View style={styles.eyebrowRow}>
-            <ThemedText style={styles.eyebrow}>BTT Practice</ThemedText>
+            <ThemedText style={[styles.eyebrow, { color: theme.accent }]}>Theory Practice</ThemedText>
             {questions.length > 0 ? (
               <ThemedText style={styles.counter}>
                 {Math.min(currentIndex + 1, questions.length)} / {questions.length}
@@ -156,10 +201,15 @@ export default function QuizScreen() {
             One question at a time. Pick an answer, review the feedback, then move on.
           </ThemedText>
           {questions.length > 0 ? (
-            <View style={styles.progressTrack}>
+            <View
+              style={[
+                styles.progressTrack,
+                { backgroundColor: isDark ? theme.progressTrack.dark : theme.progressTrack.light },
+              ]}>
               <View
                 style={[
                   styles.progressFill,
+                  { backgroundColor: theme.accent },
                   { width: `${(Math.min(currentIndex + 1, questions.length) / questions.length) * 100}%` },
                 ]}
               />
@@ -206,6 +256,7 @@ export default function QuizScreen() {
                 onPress={restartQuiz}
                 style={({ pressed }) => [
                   styles.primaryButton,
+                  { backgroundColor: theme.accent },
                   pressed ? styles.buttonPressed : null,
                 ]}>
                 <ThemedText
@@ -223,7 +274,9 @@ export default function QuizScreen() {
               lightColor="#FFFFFF"
               darkColor="#201C16"
               style={[styles.questionCard, isWide ? styles.questionCardWide : null]}>
-              <ThemedText style={styles.questionNumber}>Question {currentIndex + 1}</ThemedText>
+              <ThemedText style={[styles.questionNumber, { color: theme.accent }]}>
+                Question {currentIndex + 1}
+              </ThemedText>
               <ThemedText type="subtitle" style={styles.questionText}>
                 {currentQuestion.question}
               </ThemedText>
@@ -241,7 +294,12 @@ export default function QuizScreen() {
                       onPress={() => selectAnswer(currentQuestion, option)}
                       style={({ pressed }) => [
                         styles.option,
-                        isDark ? styles.optionDark : styles.optionLight,
+                        {
+                          backgroundColor: isDark ? theme.option.dark : theme.option.light,
+                          borderColor: isDark
+                            ? theme.optionBorder.dark
+                            : theme.optionBorder.light,
+                        },
                         hasAnswered && isCorrectOption ? styles.optionCorrect : null,
                         hasAnswered && isSelected && !isCorrectOption ? styles.optionWrong : null,
                         pressed ? styles.optionPressed : null,
@@ -280,6 +338,7 @@ export default function QuizScreen() {
                 onPress={goNext}
                 style={({ pressed }) => [
                   styles.primaryButton,
+                  { backgroundColor: theme.accent },
                   !currentAnswer ? styles.primaryButtonDisabled : null,
                   pressed ? styles.buttonPressed : null,
                 ]}>
@@ -301,12 +360,6 @@ export default function QuizScreen() {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-  },
-  screenLight: {
-    backgroundColor: '#F4E8D1',
-  },
-  screenDark: {
-    backgroundColor: '#0F0D09',
   },
   content: {
     gap: 18,
@@ -332,7 +385,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   eyebrow: {
-    color: '#B36A00',
     fontSize: 13,
     fontWeight: '700',
     letterSpacing: 1,
@@ -373,12 +425,10 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   progressFill: {
-    backgroundColor: '#D67B00',
     borderRadius: 999,
     height: '100%',
   },
   questionNumber: {
-    color: '#B36A00',
     fontWeight: '700',
   },
   questionText: {
@@ -393,14 +443,6 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     paddingHorizontal: 16,
     paddingVertical: 15,
-  },
-  optionLight: {
-    backgroundColor: '#FFFBF4',
-    borderColor: '#E8D6B9',
-  },
-  optionDark: {
-    backgroundColor: '#2A251D',
-    borderColor: '#504536',
   },
   optionCorrect: {
     backgroundColor: '#159947',
@@ -435,7 +477,6 @@ const styles = StyleSheet.create({
   },
   primaryButton: {
     alignItems: 'center',
-    backgroundColor: '#D67B00',
     borderRadius: 999,
     paddingVertical: 16,
   },

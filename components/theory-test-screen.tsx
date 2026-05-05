@@ -1,24 +1,41 @@
+import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { ActivityIndicator, Pressable, StyleSheet, View } from 'react-native';
-import { router } from 'expo-router';
 
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Fonts } from '@/constants/theme';
-import { findFormId, getFormFields, type FormField } from '@/lib/form-gov';
 import { useColorScheme } from '@/hooks/use-color-scheme';
+import { findFormId, getFormFields, type FormField } from '@/lib/form-gov';
 
-const FORM_ENDPOINT = 'https://form.gov.sg/api/v3/forms/67317e882e2ffcb14032e4a2';
-
-type PractiseSection = {
+type TheoryTestSection = {
   id: string;
   title: string;
   formId?: string;
 };
 
-function toPractiseSections(fields: FormField[]): PractiseSection[] {
+type TheoryTestScreenProps = {
+  endpoint: string;
+  title: string;
+  subtitle: string;
+  headerBackgroundColor: { light: string; dark: string };
+  theme: {
+    accent: string;
+    screenBackground: { light: string; dark: string };
+    heroBackground: { light: string; dark: string };
+    progressTrack: { light: string; dark: string };
+    optionBackground: { light: string; dark: string };
+    optionBorder: { light: string; dark: string };
+    cardBackground: { light: string; dark: string };
+    cardBorder: { light: string; dark: string };
+  };
+  iconName: React.ComponentProps<typeof IconSymbol>['name'];
+  iconColor: string;
+};
+
+function toTheoryTestSections(fields: FormField[]): TheoryTestSection[] {
   return fields
     .filter((field) => typeof field.title === 'string' && field.title.trim().length > 0)
     .map((field, index) => ({
@@ -28,8 +45,16 @@ function toPractiseSections(fields: FormField[]): PractiseSection[] {
     }));
 }
 
-export default function PractiseScreen() {
-  const [sections, setSections] = useState<PractiseSection[]>([]);
+export function TheoryTestScreen({
+  endpoint,
+  title,
+  subtitle,
+  headerBackgroundColor,
+  theme,
+  iconName,
+  iconColor,
+}: TheoryTestScreenProps) {
+  const [sections, setSections] = useState<TheoryTestSection[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const colorScheme = useColorScheme() ?? 'light';
@@ -38,16 +63,17 @@ export default function PractiseScreen() {
   useEffect(() => {
     let isMounted = true;
 
-    async function loadPractiseSections() {
+    async function loadSections() {
       try {
-        const response = await fetch(FORM_ENDPOINT);
+        setIsLoading(true);
+        const response = await fetch(endpoint);
 
         if (!response.ok) {
           throw new Error(`Form request failed with status ${response.status}`);
         }
 
         const payload: unknown = await response.json();
-        const nextSections = toPractiseSections(getFormFields(payload));
+        const nextSections = toTheoryTestSections(getFormFields(payload));
 
         if (isMounted) {
           setSections(nextSections);
@@ -64,24 +90,19 @@ export default function PractiseScreen() {
       }
     }
 
-    loadPractiseSections();
+    loadSections();
 
     return () => {
       isMounted = false;
     };
-  }, []);
+  }, [endpoint]);
 
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#F7D9A8', dark: '#3D2B13' }}
+      headerBackgroundColor={headerBackgroundColor}
       showsVerticalScrollIndicator={false}
       headerImage={
-        <IconSymbol
-          size={300}
-          color="#D69B2D"
-          name="graduationcap.fill"
-          style={styles.headerImage}
-        />
+        <IconSymbol size={300} color={iconColor} name={iconName} style={styles.headerImage} />
       }>
       <ThemedView style={styles.titleContainer}>
         <ThemedText
@@ -89,10 +110,10 @@ export default function PractiseScreen() {
           style={{
             fontFamily: Fonts.rounded,
           }}>
-          Practise
+          {title}
         </ThemedText>
       </ThemedView>
-      <ThemedText>Choose a section to start a Basic Theory Test practice quiz.</ThemedText>
+      <ThemedText>{subtitle}</ThemedText>
 
       {isLoading ? (
         <ThemedView style={styles.statusContainer}>
@@ -125,16 +146,33 @@ export default function PractiseScreen() {
                 if (section.formId) {
                   router.push({
                     pathname: '/quiz/[formId]',
-                    params: { formId: section.formId, title: section.title },
+                    params: {
+                      formId: section.formId,
+                      title: section.title,
+                      accent: theme.accent,
+                      screenLight: theme.screenBackground.light,
+                      screenDark: theme.screenBackground.dark,
+                      heroLight: theme.heroBackground.light,
+                      heroDark: theme.heroBackground.dark,
+                      progressTrackLight: theme.progressTrack.light,
+                      progressTrackDark: theme.progressTrack.dark,
+                      optionLight: theme.optionBackground.light,
+                      optionDark: theme.optionBackground.dark,
+                      optionBorderLight: theme.optionBorder.light,
+                      optionBorderDark: theme.optionBorder.dark,
+                    },
                   });
                 }
               }}
               style={({ pressed }) => [
                 styles.card,
                 section.formId
-                  ? isDark
-                    ? styles.cardEnabledDark
-                    : styles.cardEnabled
+                  ? {
+                      backgroundColor: isDark
+                        ? theme.cardBackground.dark
+                        : theme.cardBackground.light,
+                      borderColor: isDark ? theme.cardBorder.dark : theme.cardBorder.light,
+                    }
                   : isDark
                     ? styles.cardDisabledDark
                     : styles.cardDisabled,
@@ -177,14 +215,6 @@ const styles = StyleSheet.create({
     minHeight: 132,
     padding: 16,
     width: '48%',
-  },
-  cardEnabled: {
-    backgroundColor: '#FFF4DF',
-    borderColor: '#E0A948',
-  },
-  cardEnabledDark: {
-    backgroundColor: '#33230B',
-    borderColor: '#B98222',
   },
   cardDisabled: {
     backgroundColor: '#F0F0F0',

@@ -11,30 +11,31 @@ export default function TabLayout() {
 
   return (
     <Tabs
+      initialRouteName="btt"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
         tabBarButton: HapticTab,
       }}>
       <Tabs.Screen
-        name="index"
+        name="btt"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: 'BTT',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="book.fill" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="ftt"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'FTT',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="car.fill" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="practise"
+        name="rtt"
         options={{
-          title: 'Practise',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="graduationcap.fill" color={color} />,
+          title: 'RTT',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="motorcycle.fill" color={color} />,
         }}
       />
     </Tabs>
