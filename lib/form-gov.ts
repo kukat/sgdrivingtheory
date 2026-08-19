@@ -1,5 +1,6 @@
 const FORM_URL_PATTERN = /https:\/\/form\.gov\.sg\/([a-f\d]{24})/i;
 const ANSWER_PREFIX_PATTERN = /^answer:\s*/i;
+const OPTION_LETTER_PATTERN = /^\s*([A-D])\s*[).]\s*/i;
 
 export type FormField = {
   _id?: string;
@@ -66,6 +67,30 @@ export function findFormId(value: unknown): string | undefined {
 export function parseAnswer(description: string | undefined): string | undefined {
   const answer = description?.replace(ANSWER_PREFIX_PATTERN, '').trim();
   return answer && answer.length > 0 ? answer : undefined;
+}
+
+export function getOptionLetter(value: string): string | undefined {
+  const letter = value.trim().match(OPTION_LETTER_PATTERN)?.[1];
+  return letter ? letter.toUpperCase() : undefined;
+}
+
+export function normalizeAnswer(value: string): string {
+  return value
+    .trim()
+    .replace(OPTION_LETTER_PATTERN, (_, letter: string) => `${letter.toUpperCase()}) `)
+    .replace(/\s+/g, ' ')
+    .toLowerCase();
+}
+
+export function isCorrectAnswer(selectedAnswer: string, answer: string): boolean {
+  const selectedLetter = getOptionLetter(selectedAnswer);
+  const answerLetter = getOptionLetter(answer);
+
+  if (selectedLetter && answerLetter) {
+    return selectedLetter === answerLetter;
+  }
+
+  return normalizeAnswer(selectedAnswer) === normalizeAnswer(answer);
 }
 
 export function getQuizQuestions(fields: FormField[]): QuizQuestion[] {

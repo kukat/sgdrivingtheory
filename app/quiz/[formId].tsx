@@ -12,7 +12,7 @@ import {
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Fonts } from '@/constants/theme';
-import { getFormFields, getQuizQuestions, type QuizQuestion } from '@/lib/form-gov';
+import { getFormFields, getQuizQuestions, isCorrectAnswer, type QuizQuestion } from '@/lib/form-gov';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 
 type AnswerState = {
@@ -22,14 +22,6 @@ type AnswerState = {
 
 function getParam(value: string | string[] | undefined): string | undefined {
   return Array.isArray(value) ? value[0] : value;
-}
-
-function normalizeAnswer(value: string) {
-  return value.trim().replace(/\s+/g, ' ');
-}
-
-function isCorrectAnswer(selectedAnswer: string, answer: string) {
-  return normalizeAnswer(selectedAnswer) === normalizeAnswer(answer);
 }
 
 function getThemeParam(value: string | string[] | undefined, fallback: string) {
