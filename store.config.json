@@ -1,6 +1,7 @@
 {
   "configVersion": 0,
   "apple": {
+    "version": "1.0",
     "copyright": "2026 Cheng Yao",
     "categories": ["EDUCATION", "REFERENCE"],
     "advisory": {
@@ -56,7 +57,7 @@
         "privacyPolicyUrl": "https://github.com/kukat/sgdrivingtheory/blob/main/store/PRIVACY.md"
       },
       "zh-Hans": {
-        "title": "驾考宝典",
+        "title": "新加坡驾考宝典",
         "subtitle": "BTT FTT RTT 理论练习",
         "promoText": "按章节练习 BTT、FTT、RTT，并可打开交通警察官方 Handbook。",
         "description": "练习新加坡理论考试：Basic Theory Test (BTT)、Final Theory Test (FTT)、Riding Theory Test (RTT)。\n\n选一种考试，点一个章节，一题一题做。选完立刻显示对错，做完给出分数。\n\n不用注册。没有广告。做题需要联网。\n\n可以做什么\n- BTT、FTT、RTT 三个分页分别练习\n- 按章节刷题\n- 每题即时批改\n- 章节结束显示分数\n- 在 App 里打开 BTT / FTT / RTT Handbook PDF\n\n这不是什么\n驾考宝典不是新加坡警察部队或交通警察的官方 App。不是计时模拟考，也不包含实操路考。\n\n考试前请确认你用的是现行 Handbook。",
