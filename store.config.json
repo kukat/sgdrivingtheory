@@ -1,0 +1,80 @@
+{
+  "configVersion": 0,
+  "apple": {
+    "copyright": "2026 Cheng Yao",
+    "categories": ["EDUCATION", "REFERENCE"],
+    "advisory": {
+      "alcoholTobaccoOrDrugUseOrReferences": "INFREQUENT_OR_MILD",
+      "contests": "NONE",
+      "gamblingSimulated": "NONE",
+      "horrorOrFearThemes": "NONE",
+      "matureOrSuggestiveThemes": "NONE",
+      "medicalOrTreatmentInformation": "NONE",
+      "profanityOrCrudeHumor": "NONE",
+      "sexualContentGraphicAndNudity": "NONE",
+      "sexualContentOrNudity": "NONE",
+      "violenceCartoonOrFantasy": "NONE",
+      "violenceRealistic": "NONE",
+      "violenceRealisticProlongedGraphicOrSadistic": "NONE",
+      "gambling": false,
+      "unrestrictedWebAccess": false,
+      "kidsAgeBand": null,
+      "ageRatingOverride": "NONE",
+      "koreaAgeRatingOverride": "NONE"
+    },
+    "release": {
+      "automaticRelease": false
+    },
+    "review": {
+      "firstName": "Cheng",
+      "lastName": "Yao",
+      "email": "kukathe@gmail.com",
+      "phone": "+65 87260086",
+      "demoRequired": false,
+      "notes": "Driving Bible practises Singapore theory tests: Basic Theory Test (BTT), Final Theory Test (FTT), and Riding Theory Test (RTT).\n\nNo login. Open the BTT, FTT, or RTT tab, pick a section, and answer questions. Each answer is marked immediately. A network connection is required to load questions.\n\nHandbook buttons open a PDF in an in-app browser. This is not a general-purpose web browser.\n\nThis is not an official Singapore Police Force or Traffic Police app."
+    },
+    "info": {
+      "en-US": {
+        "title": "Driving Bible",
+        "subtitle": "BTT, FTT & RTT practice",
+        "promoText": "Section practice for BTT, FTT and RTT, with official Traffic Police handbook PDFs.",
+        "description": "Practice the Singapore Basic Theory Test (BTT), Final Theory Test (FTT), and Riding Theory Test (RTT).\n\nOpen a test type, pick a section, and answer one question at a time. The app marks each answer immediately and shows your score when the section is done.\n\nNo account. No ads. A network connection is required to load questions.\n\nWHAT YOU CAN DO\n- Practice BTT, FTT, and RTT from separate tabs\n- Work through practice sections\n- See correct or incorrect feedback on every question\n- Recap your score at the end of a section\n- Open the BTT, FTT, and RTT handbook PDFs in the app\n\nWHAT THIS APP IS NOT\nDriving Bible is not an official Singapore Police Force or Traffic Police app. It is not a timed mock exam, and it does not cover the practical driving test.\n\nConfirm you are studying the current handbook edition before sitting the test.",
+        "keywords": [
+          "btt",
+          "ftt",
+          "rtt",
+          "theory test",
+          "driving test",
+          "practice",
+          "quiz",
+          "learner",
+          "motorcycle",
+          "riding"
+        ],
+        "releaseNotes": "First release. BTT, FTT, and RTT section practice, plus official handbook PDFs.",
+        "supportUrl": "https://github.com/kukat/sgdrivingtheory/issues",
+        "privacyPolicyUrl": "https://github.com/kukat/sgdrivingtheory/blob/main/store/PRIVACY.md"
+      },
+      "zh-Hans": {
+        "title": "驾考宝典",
+        "subtitle": "BTT FTT RTT 理论练习",
+        "promoText": "按章节练习 BTT、FTT、RTT，并可打开交通警察官方 Handbook。",
+        "description": "练习新加坡理论考试：Basic Theory Test (BTT)、Final Theory Test (FTT)、Riding Theory Test (RTT)。\n\n选一种考试，点一个章节，一题一题做。选完立刻显示对错，做完给出分数。\n\n不用注册。没有广告。做题需要联网。\n\n可以做什么\n- BTT、FTT、RTT 三个分页分别练习\n- 按章节刷题\n- 每题即时批改\n- 章节结束显示分数\n- 在 App 里打开 BTT / FTT / RTT Handbook PDF\n\n这不是什么\n驾考宝典不是新加坡警察部队或交通警察的官方 App。不是计时模拟考，也不包含实操路考。\n\n考试前请确认你用的是现行 Handbook。",
+        "keywords": [
+          "驾考",
+          "理论考试",
+          "BTT",
+          "FTT",
+          "RTT",
+          "驾照",
+          "练习",
+          "题库",
+          "摩托车"
+        ],
+        "releaseNotes": "首个版本。支持 BTT、FTT、RTT 章节练习，以及官方 Handbook PDF。",
+        "supportUrl": "https://github.com/kukat/sgdrivingtheory/issues",
+        "privacyPolicyUrl": "https://github.com/kukat/sgdrivingtheory/blob/main/store/PRIVACY.md"
+      }
+    }
+  }
+}

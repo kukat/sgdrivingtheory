@@ -16,6 +16,13 @@
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "ios": {
+        "ascAppId": "6767448356",
+        "appName": "Driving Bible",
+        "language": "en-US",
+        "metadataPath": "./store.config.json"
+      }
+    }
   }
 }
