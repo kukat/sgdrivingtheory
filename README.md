@@ -50,6 +50,10 @@ npx tsc --noEmit
 - iOS bundle identifier: `me.cyao.sgdrivingtheory`
 - Android package: `me.cyao.sgdrivingtheory`
 
+## Release
+
+Local APK, EAS production, TestFlight, and Play internal testing: [RELEASE.md](RELEASE.md).
+
 ## Project Structure
 
 - `app/(tabs)/btt.tsx`, `ftt.tsx`, `rtt.tsx`: theory-test entry tabs.
