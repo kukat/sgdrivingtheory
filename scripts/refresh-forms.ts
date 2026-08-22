@@ -207,6 +207,7 @@ function upsertFailureIssue(testId: TestId, failures: ContractFailure[]) {
   const existing = openIssueNumber(testId);
   if (existing) {
     run('gh', ['issue', 'edit', existing, '--title', title, '--body', body]);
+    run('gh', ['issue', 'comment', existing, '--body', body]);
     return existing;
   }
 
