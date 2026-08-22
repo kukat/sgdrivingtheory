@@ -1,0 +1,50 @@
+name: Refresh form catalogs
+
+on:
+  schedule:
+    - cron: '17 1 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: form-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      HAS_SMTP: ${{ secrets.SMTP_PASSWORD != '' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch, test, and open PR or issues
+        id: refresh
+        run: npx --yes tsx@4.20.6 scripts/refresh-forms.ts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Optional: repo secrets SMTP_USERNAME + SMTP_PASSWORD (Gmail app password).
+      # Failures always open or update a GitHub issue assigned to the repo owner.
+      - name: Email failure report
+        if: failure() && env.HAS_SMTP == 'true'
+        continue-on-error: true
+        uses: dawidd6/action-send-mail@v4
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: Driving Bible form refresh failed
+          to: kukathe@gmail.com
+          from: ${{ secrets.SMTP_USERNAME }}
+          html_body: file://form-refresh-report.md
+          convert_markdown: true

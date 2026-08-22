@@ -1,0 +1,1554 @@
+{
+  "version": 1,
+  "id": "btt",
+  "title": "Basic Theory Test",
+  "contentHash": "b200c498687fdb6eba580db4a706c9c7a8082adbbb8bbb813b8b116e9bc6f47c",
+  "sections": [
+    {
+      "id": "685e03609b4886a57939e113",
+      "title": "Blind Spots / Road Safety / BTT-General",
+      "formId": "67f47c45ac6e19d269e76c66",
+      "questions": [
+        {
+          "id": "67318011edb5f0662805f0d8",
+          "question": "To check 'blind spot' when driving, you must",
+          "options": [
+            "A) Turn your head and look over your shoulder.",
+            "B) Turn your head and look into the wing mirrors .",
+            "C) Turn your head and look into the rear-view mirror."
+          ],
+          "answer": "A) Turn your head and look over your shoulder."
+        },
+        {
+          "id": "67318f8c27aeb3ce5c571ecd",
+          "question": "Before changing lanes, you should check your blind spots by",
+          "options": [
+            "A) Looking into the rear view mirror.",
+            "B) Looking over your shoulder.",
+            "C) Looking at the side mirrors."
+          ],
+          "answer": "B) Looking over your shoulder."
+        },
+        {
+          "id": "6731936427aeb3ce5c57f8e8",
+          "question": "'Blind spots' of a vehicle is an area which cannot be viewed by",
+          "options": [
+            "A) the rear view mirror.",
+            "B) left and right wings mirror.",
+            "C) both A and B."
+          ],
+          "answer": "C) both A and B."
+        },
+        {
+          "id": "6731ac05c9064112eadb58e9",
+          "question": "Motorcyclist will often look over their right shoulder just before turning right. This is because ___",
+          "options": [
+            "A) they need to listen for following traffic.",
+            "B) they need to check for traffic in their blind area.",
+            "C) looking around helps them balance as they turn."
+          ],
+          "answer": "B) they need to check for traffic in their blind area."
+        },
+        {
+          "id": "673af16f25d25160d519989c",
+          "question": "Before you make a U-turn on the road, you should check your blind spot by",
+          "options": [
+            "A)looking at the rear view mirror.",
+            "B) looking over your shoulder.",
+            "C) looking at the side mirrors."
+          ],
+          "answer": "B) looking over your shoulder."
+        },
+        {
+          "id": "67d0eff4186c9746b6e4f9ac",
+          "question": "It is important to check the 'blind spot' before",
+          "options": [
+            "A) changing lanes.",
+            "B) changing gear.",
+            "C) slowing down."
+          ],
+          "answer": "A) changing lanes."
+        },
+        {
+          "id": "67d0f0bee6c56d64f155257b",
+          "question": "Your reaction time could be affected when",
+          "options": [
+            "A) you are tired.",
+            "B) your vehicle is old.",
+            "C) the traffic is heavy."
+          ],
+          "answer": "A) you are tired."
+        },
+        {
+          "id": "67d0f1c32bd7fa4094849780",
+          "question": "When driving through puddles of water on the road, you should",
+          "options": [
+            "A) drive faster.",
+            "B) drive slower.",
+            "C) not change speed."
+          ],
+          "answer": "B) drive slower."
+        },
+        {
+          "id": "67d0f6e814ef0505bb0dd88b",
+          "question": "Before moving off, you should",
+          "options": [
+            "A) use your mirrors and signal if necessary.",
+            "B) use your mirrors, check your blind spot and signal.",
+            "C) signal and move."
+          ],
+          "answer": "B) use your mirrors, check your blind spot and signal."
+        },
+        {
+          "id": "67d10312618e82f7e1341ea0",
+          "question": "How does the car interior lights affect your driving?",
+          "options": [
+            "A) It makes you more alert.",
+            "B) It reduces your visibility.",
+            "C) It helps you to see better."
+          ],
+          "answer": "B) It reduces your visibility."
+        },
+        {
+          "id": "67d10397346de42dddeed8b5",
+          "question": "On a wet road, the braking distance will",
+          "options": [
+            "A) not increase if the tyres are good.",
+            "B) not increase if the brakes are efficient.",
+            "C) increase despite good tyres."
+          ],
+          "answer": "C) increase despite good tyres."
+        },
+        {
+          "id": "67d103dfba7c5cbd1f2e4912",
+          "question": "In which of these situations should you avoid overtaking?",
+          "options": [
+            "A) Approaching a dip in the road.",
+            "B) On a 50km/h road.",
+            "C) In a one-way street."
+          ],
+          "answer": "A) Approaching a dip in the road."
+        },
+        {
+          "id": "67d10444b148cbb2a00c77d1",
+          "question": "What should you use the horn for?",
+          "options": [
+            "A) to signal your annoyance.",
+            "B) to greet other road users.",
+            "C) to warn others of danger."
+          ],
+          "answer": "C) to warn others of danger."
+        },
+        {
+          "id": "67d105b75e7738adf6626631",
+          "question": "When driving in heavy rain, you should turn on",
+          "options": [
+            "A) The hazard lights.",
+            "B) The headlights and hazard lights.",
+            "C) The headlights and tail lights."
+          ],
+          "answer": "C) The headlights and tail lights."
+        },
+        {
+          "id": "67d105f9a748faa00fd55644",
+          "question": "You must signal your intention at least",
+          "options": [
+            "A) 2 seconds in advance.",
+            "B) 3 seconds in advance.",
+            "C) 5 seconds in advance."
+          ],
+          "answer": "B) 3 seconds in advance."
+        }
+      ]
+    },
+    {
+      "id": "685e03ba9e776320c12d94bb",
+      "title": "Ambulance / Bus Lane / Zig Zag lines",
+      "formId": "67f5f3a1e01289775b028639",
+      "questions": [
+        {
+          "id": "67318011edb5f0662805f0d8",
+          "question": "When you hear the siren of an emergency vehicle, you should",
+          "options": [
+            "A) Stop immediately where you are in order to make way.",
+            "B) Pull over to the left or right side of the road.",
+            "C) Sound your horn to warn the front vehicles to speed up."
+          ],
+          "answer": "B) Pull over to the left or right side of the road."
+        },
+        {
+          "id": "67318f8c27aeb3ce5c571ecd",
+          "question": "Within the zig-zag lines area of a pedestrian crossing, you;",
+          "options": [
+            "A) May overtake another vehicle only when that vehicle comes to a complete stop.",
+            "B) May overtake another vehicle if you do not cause inconvenience to pedestrians.",
+            "C) Must not overtake even if you think it is safe to do so."
+          ],
+          "answer": "C) Must not overtake even if you think it is safe to do so."
+        },
+        {
+          "id": "6731936427aeb3ce5c57f8e8",
+          "question": "When you hear the siren of an emergency vehicle but are not sure where it is coming from, you should",
+          "options": [
+            "A) continue to drive at the same speed.",
+            "B) move to the side and stop if necessary.",
+            "C)drive faster so as not to obstruct the emergency vehicle."
+          ],
+          "answer": "B) move to the side and stop if necessary."
+        },
+        {
+          "id": "6731ac05c9064112eadb58e9",
+          "question": "You should give way to emergency vehicles approaching from behind by",
+          "options": [
+            "A) slowing down.",
+            "B) moving to the side.",
+            "C) driving faster."
+          ],
+          "answer": "B) moving to the side."
+        },
+        {
+          "id": "673af16f25d25160d519989c",
+          "question": "When an emergency vehicle behind you sounds its siren, you should",
+          "options": [
+            "A) slow down quickly.",
+            "B) pull to the side and stop if necessary.",
+            "C) increase your speed."
+          ],
+          "answer": "B) pull to the side and stop if necessary."
+        },
+        {
+          "id": "67d0eff4186c9746b6e4f9ac",
+          "question": "During bus lane prohibited hours, motorist is allowed to use the bus lane when",
+          "options": [
+            "A) it is empty.",
+            "B) the other lanes are congested.",
+            "C) the driver is trying to avoid a collision."
+          ],
+          "answer": "C) the driver is trying to avoid a collision."
+        },
+        {
+          "id": "67d0f0bee6c56d64f155257b",
+          "question": "If a fire engine behind you sounds the siren, you should",
+          "options": [
+            "A) Continue at normal speed.",
+            "B) Move to the side, slow down or stop if necessary.",
+            "C) Increase your speed and move to the side."
+          ],
+          "answer": "B) Move to the side, slow down or stop if necessary."
+        },
+        {
+          "id": "67d0f1c32bd7fa4094849780",
+          "question": "On a one way street, you hear the siren of an emergency vehicle behind you, you should",
+          "options": [
+            "A) Give way by moving to the left only.",
+            "B) Give way by moving to the left or right.",
+            "C) Stop immediately."
+          ],
+          "answer": "B) Give way by moving to the left or right."
+        },
+        {
+          "id": "67d0f6e814ef0505bb0dd88b",
+          "question": "What must you do when a police vehicle with its siren on is behind you?",
+          "options": [
+            "A) Continue to drive as normal.",
+            "B) Slow down and move to the side.",
+            "C) Speed up."
+          ],
+          "answer": "B) Slow down and move to the side."
+        },
+        {
+          "id": "67d10312618e82f7e1341ea0",
+          "question": "When being followed by a police vehicle with its siren on, you should",
+          "options": [
+            "A) Accelerate quickly to get away from it.",
+            "B) Pull over safely, as soon as possible to let it pass.",
+            "C) Brake quickly and stop to let it pass."
+          ],
+          "answer": "B) Pull over safely, as soon as possible to let it pass."
+        },
+        {
+          "id": "67d10397346de42dddeed8b5",
+          "question": "On Saturday, all vehicles must avoid the bus lane between (red marking)",
+          "options": [
+            "A) 7.30 am to 8.00 pm",
+            "B) 7.30 am to 11.00 pm",
+            "C) 5.00 pm to 8.00 pm"
+          ],
+          "answer": "B) 7.30 am to 11.00 pm"
+        },
+        {
+          "id": "67d103dfba7c5cbd1f2e4912",
+          "question": "When you cannot confirm the direction of the approach of an emergency vehicle, you should",
+          "options": [
+            "A) Maintain your speed and position.",
+            "B) Increase the speed of your vehicle.",
+            "C) Slow down your speed and move to the left lane."
+          ],
+          "answer": "C) Slow down your speed and move to the left lane."
+        },
+        {
+          "id": "67d10444b148cbb2a00c77d1",
+          "question": "While driving and  you hear the siren of an ambulance behind you, you should",
+          "options": [
+            "A) Stop immediately to let the ambulance overtake or pass",
+            "B) Keep left, slow down and stop if necessary",
+            "C) Speed up in order not to obstruct the ambulance"
+          ],
+          "answer": "B) Keep left, slow down and stop if necessary"
+        },
+        {
+          "id": "67d105b75e7738adf6626631",
+          "question": "You are not allowed to drive into a bus lane on Monday to Friday from",
+          "options": [
+            "A) 7.30 a.m, to 9.30 a.m.",
+            "B) 7.00 a.m. to 9.30 a.m.",
+            "C) 7.15 a.m. to 10.00 a.m."
+          ],
+          "answer": "A) 7.30 a.m, to 9.30 a.m."
+        },
+        {
+          "id": "67d105f9a748faa00fd55644",
+          "question": "You can drive on the bus lane",
+          "options": [
+            "A) when all other lanes are occupied.",
+            "B) outside the restricted hours.",
+            "C) when passing another vehicle on the left."
+          ],
+          "answer": "B) outside the restricted hours."
+        }
+      ]
+    },
+    {
+      "id": "685e04b88745b36d0f304e0f",
+      "title": "Right Lane / Traffic Lights",
+      "formId": "67f8c47aab1952dfdc279c48",
+      "questions": [
+        {
+          "id": "67318011edb5f0662805f0d8",
+          "question": "When can you use the right lane of a two-lane carriageway?",
+          "options": [
+            "A) When your path of travel is obstructed by road works or parked vehicles.",
+            "B) When your speed is higher that the speed limit for the road.",
+            "C) When the right lane is free of traffic."
+          ],
+          "answer": "A) When your path of travel is obstructed by road works or parked vehicles."
+        },
+        {
+          "id": "67318f8c27aeb3ce5c571ecd",
+          "question": "You may drive along the right-most lane when",
+          "options": [
+            "A) You are travelling at the speed limits.",
+            "B) The traffic is not heavy.",
+            "C) You are overtaking another vehicle."
+          ],
+          "answer": "C) You are overtaking another vehicle."
+        },
+        {
+          "id": "6731ac05c9064112eadb58e9",
+          "question": "Road hogging",
+          "options": [
+            "A) Ensures a smoother flow of traffic",
+            "B) Causes other vehicles to overtake dangerously on the left",
+            "C) Causes other vehicles to overtake on the right"
+          ],
+          "answer": "B) Causes other vehicles to overtake dangerously on the left"
+        },
+        {
+          "id": "673af16f25d25160d519989c",
+          "question": "When should you use the right outer most lane of a carriageway?",
+          "options": [
+            "A) When driving at the maximum speed",
+            "B) When overtaking",
+            "C) When all other lanes are occupied"
+          ],
+          "answer": "B) When overtaking"
+        },
+        {
+          "id": "67d0eff4186c9746b6e4f9ac",
+          "question": "You are permitted to use the outer most right lane on a three-lane dual carriageway when",
+          "options": [
+            "A) you are travelling at the maximum legal speed limit of the road",
+            "B) you intend to turn right ahead",
+            "C) emergency vehicles are not using it"
+          ],
+          "answer": "B) you intend to turn right ahead"
+        },
+        {
+          "id": "67d0f0bee6c56d64f155257b",
+          "question": "When you see green traffic light signal from a distance, you should",
+          "options": [
+            "A) Speed up.",
+            "B) Slow down.",
+            "C) Carry on at the same speed."
+          ],
+          "answer": "B) Slow down."
+        },
+        {
+          "id": "67d0f1c32bd7fa4094849780",
+          "question": "When approaching a traffic light junction with the amber light flashing, you should",
+          "options": [
+            "A) Slow down and proceed across the junction only when it is safe to do so.",
+            "B) Speed up in order to pass the junction before the light changes.",
+            "C) Stop at the stop-line and wait for the light to change."
+          ],
+          "answer": "A) Slow down and proceed across the junction only when it is safe to do so."
+        },
+        {
+          "id": "67d0f6e814ef0505bb0dd88b",
+          "question": "When the traffic light turns green at a junction, you should",
+          "options": [
+            "A) depress the accelerator hard and move off quickly.",
+            "B) check traffic from right and left before moving off.",
+            "C) only move off when other vehicles move."
+          ],
+          "answer": "B) check traffic from right and left before moving off."
+        },
+        {
+          "id": "67d10312618e82f7e1341ea0",
+          "question": "A flashing amber traffic light signal means",
+          "options": [
+            "A) signal is about to be cancelled",
+            "B) stop unless you are so close to the stop-line that you cannot stop safety",
+            "C) traffic lights signals are out of order"
+          ],
+          "answer": "C) traffic lights signals are out of order"
+        },
+        {
+          "id": "67d10397346de42dddeed8b5",
+          "question": "The light turns red as you approach a traffic junction, when stopping you should",
+          "options": [
+            "A) Depress the brake and the clutch pedals simultaneously",
+            "B) Shift to neutral and step on the brakes",
+            "C)Brake firmly and depress the clutch pedal as the car comes to a stop"
+          ],
+          "answer": "C) Brake firmly and depress the clutch pedal as the car comes to a stop"
+        },
+        {
+          "id": "67d103dfba7c5cbd1f2e4912",
+          "question": "The 'two-second rule' is used in normal driving situation at",
+          "options": [
+            "A) Certain speed only",
+            "B) All speed",
+            "C) Fixed speed only"
+          ],
+          "answer": "B) All speed"
+        },
+        {
+          "id": "67d10444b148cbb2a00c77d1",
+          "question": "When approaching a junction and the traffic lights signal change from green to amber, you should",
+          "options": [
+            "A) stop at the stop line unless you are so close that sudden or sharp braking might cause an accident.",
+            "B) speed up to clear the intersection.",
+            "C) stop only if a red light camera is in use."
+          ],
+          "answer": "A) stop at the stop line unless you are so close that sudden or sharp braking might cause an accident."
+        },
+        {
+          "id": "67d105b75e7738adf6626631",
+          "question": "When approaching a traffic light signal that has turned to amber, you should",
+          "options": [
+            "A) Speed up.",
+            "B) Maintain your speed.",
+            "C) Slow down and stop."
+          ],
+          "answer": "C) Slow down and stop."
+        },
+        {
+          "id": "67d105f9a748faa00fd55644",
+          "question": "When the amber traffic light is flashing continuously, you should",
+          "options": [
+            "A) Slow down and proceed with caution",
+            "B) Stop and wait for it to change to green",
+            "C) Drive through it quickly"
+          ],
+          "answer": "A) Slow down and proceed with caution"
+        },
+        {
+          "id": "67d1069659703608767cad4d",
+          "question": "When the 'amber' traffic light signal is flashing, you should",
+          "options": [
+            "A) Carry on driving",
+            "B) Slow down and look out for other vehicles before proceeding",
+            "C) Call the police"
+          ],
+          "answer": "B) Slow down and look out for other vehicles before proceeding"
+        },
+        {
+          "id": "67d106d2e3673a50102712a0",
+          "question": "When the traffic light signal turns 'green', you should check",
+          "options": [
+            "A) For oncoming traffic before moving off",
+            "B) For oncoming traffic and traffic from the right and left before moving off",
+            "C) The rear view mirror before moving off"
+          ],
+          "answer": "B) For oncoming traffic and traffic from the right and left before moving off"
+        },
+        {
+          "id": "67d10749a5fdc2bbf2f3f374",
+          "question": "When the traffic lights signal turns amber and you have already passed the stop line you should,",
+          "options": [
+            "A) stop and reverse back to the stop line",
+            "B) continue to drive through the junction",
+            "C) stop immediately"
+          ],
+          "answer": "B) continue to drive through the junction"
+        },
+        {
+          "id": "67d1078eba7c5cbd1f2f21e4",
+          "question": "When the traffic lights signal turns amber, you should",
+          "options": [
+            "A) accelerate and cross the junction",
+            "B) slow down and be ready to stop",
+            "C) proceed with caution as the traffic light signals are out of order"
+          ],
+          "answer": "B) slow down and be ready to stop"
+        },
+        {
+          "id": "67d107fd9a9b271dd2efc94a",
+          "question": "When you approach a 'green' traffic light signal at a junction, you should",
+          "options": [
+            "A) Accelerate hard",
+            "B) Slow down and be ready to stop",
+            "C) Maintain your speed"
+          ],
+          "answer": "B) Slow down and be ready to stop"
+        }
+      ]
+    },
+    {
+      "id": "685e052621ef750d2453af51",
+      "title": "Lane Discipline / Overtaking",
+      "formId": "67f86c56b7134495e565a84c",
+      "questions": [
+        {
+          "id": "67318011edb5f0662805f0d8",
+          "question": "Before reaching a junction, you should;",
+          "options": [
+            "A) Form up into the correct lane which you intend to travel.",
+            "B)Sound your horn to caution other road users.",
+            "C) Speed up so as not to cause a traffic jam."
+          ],
+          "answer": "A) Form up into the correct lane which you intend to travel."
+        },
+        {
+          "id": "67318f8c27aeb3ce5c571ecd",
+          "question": "On a two-way street with two lanes in each direction, you should keep to;",
+          "options": [
+            "A) the left lane.",
+            "B)the outer lane.",
+            "C) either answers."
+          ],
+          "answer": "A) the left lane."
+        },
+        {
+          "id": "6731936427aeb3ce5c57f8e8",
+          "question": "On a two-lane carriageway, you should",
+          "options": [
+            "A) keep to the left lane",
+            "B) keep to the outer lane",
+            "C)not overtake another vehicle"
+          ],
+          "answer": "A) keep to the left lane"
+        },
+        {
+          "id": "6731ac05c9064112eadb58e9",
+          "question": "Switching lanes suddenly or abruptly will",
+          "options": [
+            "A) improve the flow of traffic on the road.",
+            "B) cause inconvenience and danger to other motorists.",
+            "C) cause wear and tear to the vehicle."
+          ],
+          "answer": "B) cause inconvenience and danger to other motorists."
+        },
+        {
+          "id": "673af16f25d25160d519989c",
+          "question": "To maintain good lane discipline, you should",
+          "options": [
+            "A) form up correctly into the intended lane before reaching the junction",
+            "B) drive between lanes so that you can switch lane easily",
+            "C) follow closely to the vehicle in front"
+          ],
+          "answer": "A) form up correctly into the intended lane before reaching the junction"
+        },
+        {
+          "id": "67d0eff4186c9746b6e4f9ac",
+          "question": "Under what circumstances you may not follow the 'keep left rule' ?",
+          "options": [
+            "A) When travelling at the maximum speed limit of the road.",
+            "B) When traffic is light.",
+            "C) When your path is obstructed."
+          ],
+          "answer": "C) When your path is obstructed."
+        },
+        {
+          "id": "67d0f0bee6c56d64f155257b",
+          "question": "When driving along a two-way street, you should",
+          "options": [
+            "A)always keep near the centre line of the road",
+            "B) not cross the centre line at bends",
+            "C) not overtake at all times"
+          ],
+          "answer": "B) not cross the centre line at bends"
+        },
+        {
+          "id": "67d0f1c32bd7fa4094849780",
+          "question": "When turning right at a one-way street, you should position your vehicle",
+          "options": [
+            "A) In the right hand lane.",
+            "B) Just left of the centre of the road.",
+            "C) In any lane depending on the traffic conditions."
+          ],
+          "answer": "A) In the right hand lane."
+        },
+        {
+          "id": "67d0f6e814ef0505bb0dd88b",
+          "question": "You are driving on a three-lane carriageway at 80 km/h .There is no traffic ahead. Which lane should you use ?",
+          "options": [
+            "A) Any lane.",
+            "B) Middle lane.",
+            "C) Left lane."
+          ],
+          "answer": "C) Left lane."
+        },
+        {
+          "id": "67d10312618e82f7e1341ea0",
+          "question": "You may overtake another vehicle on the left",
+          "options": [
+            "A) If it is a heavy vehicle.",
+            "B) If the driver in front signals his intention to turn right.",
+            "C) If you are certain that the vehicle would not change direction."
+          ],
+          "answer": "B) If the driver in front signals his intention to turn right."
+        },
+        {
+          "id": "67d10397346de42dddeed8b5",
+          "question": "When should you start to keep left after overtaking?",
+          "options": [
+            "A) As soon as you are ahead of the overtaken vehicle.",
+            "B) When you can see the overtaken vehicle in your left wing mirror.",
+            "C) When you can see the overtaken vehicle in your rear view mirror inside the cabin."
+          ],
+          "answer": "C) When you can see the overtaken vehicle in your rear view mirror inside the cabin."
+        },
+        {
+          "id": "67d103dfba7c5cbd1f2e4912",
+          "question": "Before overtaking another vehicle, you should signal for at least",
+          "options": [
+            "A) Three  seconds",
+            "B) Five seconds",
+            "C) Seven seconds"
+          ],
+          "answer": "A) Three  seconds"
+        },
+        {
+          "id": "67d10444b148cbb2a00c77d1",
+          "question": "If a motorcyclist is trying to overtake you, you should",
+          "options": [
+            "A) Drive faster to prevent the rider from overtaking you",
+            "B) Slow down and assist the rider to overtaking safely",
+            "C) Signal the driver to overtake on the left"
+          ],
+          "answer": "B) Slow down and assist the rider to overtaking safely"
+        },
+        {
+          "id": "67d105b75e7738adf6626631",
+          "question": "If the car you are overtaking is drifting in its lane, you should",
+          "options": [
+            "A) Use your horn to warn him",
+            "B) Signal him with your hand",
+            "C) Overtake it quickly"
+          ],
+          "answer": "A) Use your horn to warn him"
+        },
+        {
+          "id": "67d105f9a748faa00fd55644",
+          "question": "To drive in a way where other drivers will not find it necessary to overtake you, you should",
+          "options": [
+            "A) Drive on the extreme right lane all the time",
+            "B) Always drive at a speed that match the traffic flow",
+            "C)Drive at the maximun speed limit of the road all the time"
+          ],
+          "answer": "B) Always drive at a speed that match the traffic flow"
+        },
+        {
+          "id": "67d1069659703608767cad4d",
+          "question": "When a motorcyclist tries to overtake you on the left, you should",
+          "options": [
+            "A) Increase your speed to race the rider.",
+            "B) Reduce your speed and assist the rider to overtake safely.",
+            "C) Ignore the rider and continue driving at your normal speed."
+          ],
+          "answer": "B) Reduce your speed and assist the rider to overtake safely."
+        },
+        {
+          "id": "67d106d2e3673a50102712a0",
+          "question": "When another vehicle is overtaking you, you should",
+          "options": [
+            "A) not speed up but assist him to overtake",
+            "B)change lane and keep to the right",
+            "C) increase your speed gradually"
+          ],
+          "answer": "A) not speed up but assist him to overtake"
+        },
+        {
+          "id": "67d10749a5fdc2bbf2f3f374",
+          "question": "When being overtaken, you should",
+          "options": [
+            "A) speed up",
+            "B) maintain your speed",
+            "C) slow down"
+          ],
+          "answer": "C) slow down"
+        },
+        {
+          "id": "67d1078eba7c5cbd1f2f21e4",
+          "question": "When the motorcycle you are overtaking suddenly increases speed, you should",
+          "options": [
+            "A) accelerate more to overtake it quickly",
+            "B) slow down and abort overtaking it",
+            "C) sound your horn to warn the driver"
+          ],
+          "answer": "B) slow down and abort overtaking it."
+        },
+        {
+          "id": "67d107fd9a9b271dd2efc94a",
+          "question": "When you have moved to the right hand side of the road to overtake another vehicle, you should",
+          "options": [
+            "A) Maintain your normal speed and overtake as usual",
+            "B) Accelerate and overtake as quickly as possible",
+            "C) Decelerate and change to a higher gear"
+          ],
+          "answer": "B) Accelerate and overtake as quickly as possible"
+        },
+        {
+          "id": "67ef95afc70d16cc2446db8e",
+          "question": "While overtaking another vehicle, the vehicle suddenly goes faster, you should",
+          "options": [
+            "A) accelerate hard to overtake quickly",
+            "B) slow down and move safely back to your lane",
+            "C) sound the horn continuously to warn the other driver"
+          ],
+          "answer": "B) slow down and move safely back to your lane"
+        }
+      ]
+    },
+    {
+      "id": "685e057e2495f8268d72e01a",
+      "title": "Rules and Regulations",
+      "formId": "67f4cd0bf53b12b2f28195db",
+      "questions": [
+        {
+          "id": "67318011edb5f0662805f0d8",
+          "question": "Driving with a 'bald' tyre is dangerous because",
+          "options": [
+            "A) it skids more easily.",
+            "B) there is greater probability of punctures.",
+            "C) both answers (A) and (B)."
+          ],
+          "answer": "C) both answers (A) and (B)."
+        },
+        {
+          "id": "67318f8c27aeb3ce5c571ecd",
+          "question": "When you are driving along, you must check your rear view mirror once every",
+          "options": [
+            "A) 1 to 2 seconds.",
+            "B) 5 to 10 seconds.",
+            "C) 20 to 30 seconds."
+          ],
+          "answer": "B) 5 to 10 seconds."
+        },
+        {
+          "id": "6731936427aeb3ce5c57f8e8",
+          "question": "Reversing from a side road into a main road is",
+          "options": [
+            "A) Allowed if there is no vehicle around.",
+            "B) Not allowed for it is unsafe and could cause road accident.",
+            "C)Allowed during the daytime only."
+          ],
+          "answer": "B) Not allowed for it is unsafe and could cause road accident."
+        },
+        {
+          "id": "6731ac05c9064112eadb58e9",
+          "question": "You may overtake another vehicle on the left",
+          "options": [
+            "A) If it is a heavy vehicle.",
+            "B) If the driver in front signals his intention to turn right.",
+            "C) If you are certain that the vehicle would not change direction."
+          ],
+          "answer": "B) If the driver in front signals his intention to turn right."
+        },
+        {
+          "id": "673af16f25d25160d519989c",
+          "question": "Crossing the double continuous white lines along the centre of the road",
+          "options": [
+            "A)Is an offence because it is unsafe to do so.",
+            "B) Is not an offence if you are overtaking another vehicle.",
+            "C) Is not an offence if you do not cause inconvenience to others."
+          ],
+          "answer": "A)Is an offence because it is unsafe to do so."
+        },
+        {
+          "id": "67d0eff4186c9746b6e4f9ac",
+          "question": "No parking is allowed within ___ metres of a junction",
+          "options": [
+            "A) 12 metres of a junction.",
+            "B) 6 metres of a junction.",
+            "C) 9 metres of a junction."
+          ],
+          "answer": "B) 6 metres of a junction."
+        },
+        {
+          "id": "67d0f0bee6c56d64f155257b",
+          "question": "Parking of vehicle is prohibited within __ metres of a bus stop.",
+          "options": [
+            "A) 15 metres of a bus stop.",
+            "B) 12 metres of a bus stop.",
+            "C) 9 metres of a bus stop."
+          ],
+          "answer": "C) 9 metres of a bus stop."
+        },
+        {
+          "id": "67d0f1c32bd7fa4094849780",
+          "question": "When approaching a sharp bend or a steep hill, you",
+          "options": [
+            "A) Should not overtake other vehicles.",
+            "B) May overtake other vehicles.",
+            "C) Should stay close behind the front vehicle."
+          ],
+          "answer": "A) Should not overtake other vehicles."
+        },
+        {
+          "id": "67d0f6e814ef0505bb0dd88b",
+          "question": "When the vehicle you are overtaking suddenly increases its speed, you should",
+          "options": [
+            "A) Increase your speed further.",
+            "B) Sound the horn and signal the driver to slow down.",
+            "C) Reduce your speed and return to your original lane."
+          ],
+          "answer": "C) Reduce your speed and return to your original lane."
+        },
+        {
+          "id": "67d10312618e82f7e1341ea0",
+          "question": "In traffic hold-ups, you should",
+          "options": [
+            "A) try to get ahead of others by overtaking them on the right.",
+            "B) try to get ahead of others by overtaking them on the left.",
+            "C) stay in queue and follow the traffic flow."
+          ],
+          "answer": "C) stay in queue and follow the traffic flow."
+        },
+        {
+          "id": "67d10397346de42dddeed8b5",
+          "question": "When you see a vehicle slowing down before a Zebra Crossing, you should",
+          "options": [
+            "A) slow down and be prepared to stop.",
+            "B) sound the horn and signal the driver to slow down.",
+            "C) maintain your speed."
+          ],
+          "answer": "A) slow down and be prepared to stop."
+        },
+        {
+          "id": "67d103dfba7c5cbd1f2e4912",
+          "question": "Road hogging",
+          "options": [
+            "A) allows others to overtake safely.",
+            "B) holds up the flow of traffic.",
+            "C) reduces road accident."
+          ],
+          "answer": "B) holds up the flow of traffic."
+        },
+        {
+          "id": "67d10444b148cbb2a00c77d1",
+          "question": "You want to reverse into a side road.  You are not sure that the area behind your vehicle is clear.  What should you do?",
+          "options": [
+            "A) carry on, assuming it is clear.",
+            "B) look through the rear window only.",
+            "C) get out and check."
+          ],
+          "answer": "C) get out and check."
+        },
+        {
+          "id": "67d105b75e7738adf6626631",
+          "question": "Before entering a round about, you should",
+          "options": [
+            "A) Give way to traffic on your right.",
+            "B) Stop first before entering.",
+            "C) Accelerate to merge smoothly with traffic already in the roundabout."
+          ],
+          "answer": "A) Give way to traffic on your right."
+        },
+        {
+          "id": "67d105f9a748faa00fd55644",
+          "question": "A tyre needs to be changed when",
+          "options": [
+            "A) It is two years old.",
+            "B) The depth of its tread is less than 1.6 mm.",
+            "C) It is completely bald."
+          ],
+          "answer": "B) The depth of its tread is less than 1.6 mm."
+        },
+        {
+          "id": "67f4da8bd426fa85370f33ed",
+          "question": "The minimum age requirement for applying for a Basic Theory Test is",
+          "options": [
+            "A) 16 years.",
+            "B) 17 years.",
+            "C) 18 years."
+          ],
+          "answer": "C) 18 years."
+        },
+        {
+          "id": "67f4db5b15186e6628188141",
+          "question": "Unless otherwise stated, the maximum speed limit of all roads in Singapore is",
+          "options": [
+            "A) 50km/h.",
+            "B) 60km/h.",
+            "C) 80km/h."
+          ],
+          "answer": "A) 50km/h."
+        },
+        {
+          "id": "67f4dc3f45377fdf3dcb9b6c",
+          "question": "When driving in the rain, you should",
+          "options": [
+            "A) Drive faster to get home.",
+            "B) Reduce your speed.",
+            "C) Drive at normal speed."
+          ],
+          "answer": "B) Reduce your speed."
+        },
+        {
+          "id": "67f4dc88990af072f0b4556c",
+          "question": "When driving pass pedestrians or cyclists, you should",
+          "options": [
+            "A) Drive at normal speed, close to them.",
+            "B) Slow down and always give ample side clearance.",
+            "C) Drive quickly past them."
+          ],
+          "answer": "B) Slow down and always give ample side clearance."
+        },
+        {
+          "id": "67f4dcf6ac6e19d269ffa55b",
+          "question": "When following a bus that pulls up at a bus stop, you should",
+          "options": [
+            "A) accelerate past the bus quickly.",
+            "B) slow down and watch carefully for pedestrians.",
+            "C) sound the horn and overtake the bus."
+          ],
+          "answer": "B) slow down and watch carefully for pedestrians."
+        },
+        {
+          "id": "67f4dd4bac6e19d269ffc0b5",
+          "question": "When the 'Red man' signal is on and pedestrians are crossing, you should",
+          "options": [
+            "A) horn the pedestrians to demand the right of way.",
+            "B) stop and allow pedestrians to cross.",
+            "C) proceed behind the pedestrians."
+          ],
+          "answer": "B) stop and allow pedestrians to cross."
+        },
+        {
+          "id": "67f4dda1ab1952dfdcadc135",
+          "question": "When you see children standing by the side of the road, you should",
+          "options": [
+            "A) maintain your normal speed.",
+            "B) slow down and be prepared to stop if necessary.",
+            "C) speed pass them."
+          ],
+          "answer": "B) slow down and be prepared to stop if necessary"
+        },
+        {
+          "id": "67f4de561dd17ef70989c7b3",
+          "question": "You are driving pass a line of parked cars. You notice a ball bouncing out into the road ahead, you should",
+          "options": [
+            "A) Continue driving at the same speed and sound your horn.",
+            "B) Slow down and be prepared to stop for children.",
+            "C) Continue driving at the same speed and try to avoid the ball."
+          ],
+          "answer": "B) slow down and be prepared to stop for children"
+        },
+        {
+          "id": "67f4df200a00c538c41c0640",
+          "question": "You are turning left into a side road.  Pedestrians are crossing the road near the junction.  You should",
+          "options": [
+            "A) Wave them on.",
+            "B) Wait for them to cross.",
+            "C) Sound your horn."
+          ],
+          "answer": "B) Wait for them to cross."
+        },
+        {
+          "id": "67f4dffd460012b432847c62",
+          "question": "You need a longer distance to stop your vehicle when driving",
+          "options": [
+            "A) On a dry road.",
+            "B) On a wet road.",
+            "C) On a hard and dry ground."
+          ],
+          "answer": "B) On a wet road."
+        },
+        {
+          "id": "67f4e04a15186e662819cf5e",
+          "question": "You see two elderly pedestrians about to cross the road ahead, you should",
+          "options": [
+            "A) Expect them to wait for you to pass.",
+            "B) Speed up to pass them quickly.",
+            "C) Be careful, they may misjudge your speed."
+          ],
+          "answer": "C) Be careful, they may misjudge your speed."
+        }
+      ]
+    },
+    {
+      "id": "685e06233fa9f5a6bd664b90",
+      "title": "Alcohol/ Road Safety",
+      "formId": "67ef8902e8b901fcefb94ac0",
+      "questions": [
+        {
+          "id": "67318011edb5f0662805f0d8",
+          "question": "How does alcohol affect you?",
+          "options": [
+            "A) It reduces your concentration.",
+            "B) It increases your awareness.",
+            "C) It improves your co-ordination."
+          ],
+          "answer": "A) It reduces your concentration."
+        },
+        {
+          "id": "67318f8c27aeb3ce5c571ecd",
+          "question": "Drink driving",
+          "options": [
+            "A) will not affect your reaction time.",
+            "B) may affect your reaction time.",
+            "C) may cause you to react faster."
+          ],
+          "answer": "B) may affect your reaction time."
+        },
+        {
+          "id": "6731936427aeb3ce5c57f8e8",
+          "question": "Which of the following statements on alcohol and driving is true?",
+          "options": [
+            "A) It is safe to drive as long as you think you are not drunk.",
+            "B) It is unsafe to drive after consuming alcohol.",
+            "C) It is safe to drive one hour after having the last drink."
+          ],
+          "answer": "B) It is unsafe to drive after consuming alcohol."
+        },
+        {
+          "id": "6731ac05c9064112eadb58e9",
+          "question": "A person will be disqualified from driving if he is caught",
+          "options": [
+            "A) Driving with a blood alcohol concentration over 80 mg of alcohol/100ml of  blood.",
+            "B) Failing to obey a 'Stop' traffic sign.",
+            "C) Failing to give way to an ambulance with its siren on."
+          ],
+          "answer": "A) Driving with a blood alcohol concentration over 80 mg of alcohol/100ml of  blood."
+        },
+        {
+          "id": "673af16f25d25160d519989c",
+          "question": "A driver caught with a blood alcohol concentration over 80 mg of alcohol per 100 ml of blood will",
+          "options": [
+            "A)have to pay a fine.",
+            "B) be charged in court.",
+            "C) be jailed."
+          ],
+          "answer": "B) be charged in court."
+        },
+        {
+          "id": "67d0eff4186c9746b6e4f9ac",
+          "question": "After consuming alcohol, you should",
+          "options": [
+            "A) not drive.",
+            "B) drive slowly.",
+            "C)drive at normal speed."
+          ],
+          "answer": "A) not drive."
+        },
+        {
+          "id": "67d0f0bee6c56d64f155257b",
+          "question": "Any person caught driving with blood alcohol content which exceeds the prescribed  limit will",
+          "options": [
+            "A) have to pay a fine.",
+            "B) be charged in court.",
+            "C) be given a warning."
+          ],
+          "answer": "B) be charged in court."
+        },
+        {
+          "id": "67d0f1c32bd7fa4094849780",
+          "question": "Drink driving may cause",
+          "options": [
+            "A) Reduce the co-ordination of the control of vehicle.",
+            "B) Faster reaction.",
+            "C) Increase alertness."
+          ],
+          "answer": "A) Reduce the co-ordination of the control of vehicle."
+        },
+        {
+          "id": "67d0f6e814ef0505bb0dd88b",
+          "question": "Drinking and driving may cause",
+          "options": [
+            "A) Increase confidence.",
+            "B) Loss of proper control of the vehicle.",
+            "C) Greater awareness of danger."
+          ],
+          "answer": "B) Loss of proper control of the vehicle."
+        },
+        {
+          "id": "67d10312618e82f7e1341ea0",
+          "question": "Generally, a small amount of alcohol can make you less safe on the road.",
+          "options": [
+            "A) True.",
+            "B) False.",
+            "C) Not true, if you were an experience driver."
+          ],
+          "answer": "A) True"
+        },
+        {
+          "id": "67d10397346de42dddeed8b5",
+          "question": "How does the consumption of alcohol affect a person's driving?",
+          "options": [
+            "A) It enables the driver to make better judgements.",
+            "B) It enables the driver to have better vision of the road.",
+            "C) It reduces the driver's reaction."
+          ],
+          "answer": "C) It reduces the driver's reaction."
+        },
+        {
+          "id": "67d103dfba7c5cbd1f2e4912",
+          "question": "If you failed to have a proper control of your vehicle, you could be charged for _______________ even though your blood alcohol content is below the legal limit.",
+          "options": [
+            "A) Careless driving.",
+            "B) Drink driving.",
+            "C) Reckless driving."
+          ],
+          "answer": "B) Drink driving."
+        },
+        {
+          "id": "67d10444b148cbb2a00c77d1",
+          "question": "If you consume alcohol, you should",
+          "options": [
+            "A) Have a coffee then drive home.",
+            "B) Go home by public transport.",
+            "C) Drive home carefully."
+          ],
+          "answer": "B) Go home by public transport."
+        },
+        {
+          "id": "67d105b75e7738adf6626631",
+          "question": "If you had too much alcohol,",
+          "options": [
+            "A) your ability to drive is impaired.",
+            "B) Your reactions are better.",
+            "C) Your vision is improved."
+          ],
+          "answer": "A) your ability to drive is impaired."
+        },
+        {
+          "id": "67d105f9a748faa00fd55644",
+          "question": "If you intend to drive after attending a function, you should",
+          "options": [
+            "A) Avoid mixing your alcoholic drinks .",
+            "B) Avoid drinking alcohol.",
+            "C) Drink coffee before drinking alcohol."
+          ],
+          "answer": "B) Avoid drinking alcohol."
+        },
+        {
+          "id": "67d1069659703608767cad4d",
+          "question": "The penalty for a repeat drink driving offender is",
+          "options": [
+            "A) Fine, disqualification and a mandatory jail sentence.",
+            "B) Disqualification only.",
+            "C) Fine and disqualification only."
+          ],
+          "answer": "A) Fine, disqualification and a mandatory jail sentence."
+        },
+        {
+          "id": "67d106d2e3673a50102712a0",
+          "question": "Drink driving can contribute to accidents because",
+          "options": [
+            "A) Driver's judgement is impaired.",
+            "B) Drivers take shorter time to react.",
+            "C) Driver's vision is improved."
+          ],
+          "answer": "A) Driver's judgement is impaired."
+        },
+        {
+          "id": "67d10749a5fdc2bbf2f3f374",
+          "question": "What advice should you give to a driver who has a few alcoholic drinks at a party?",
+          "options": [
+            "A) Drive home carefully and slowly.",
+            "B) Go home by public transport.",
+            "C) Wait a short while and then drive home."
+          ],
+          "answer": "B) Go home by public transport."
+        },
+        {
+          "id": "67d1078eba7c5cbd1f2f21e4",
+          "question": "Which of the following sentences is TRUE?",
+          "options": [
+            "A) Alcohol makes you a better driver.",
+            "B) Alcohol has no effect on the way you drive.",
+            "C) Alcohol slows down your reactions when driving."
+          ],
+          "answer": "C) Alcohol slows down your reactions when driving."
+        },
+        {
+          "id": "67d107fd9a9b271dd2efc94a",
+          "question": "Which of the following statement on alcohol is true?",
+          "options": [
+            "A) You may decline a breath or blood test",
+            "B) Alcohol will not be detected by the breath test after peppermints have been eaten.",
+            "C) Even a small amount of alcohol tends to increase the chance of an accident."
+          ],
+          "answer": "C) Even a small amount of alcohol tends to increase the chance of an accident."
+        },
+        {
+          "id": "67ef95afc70d16cc2446db8e",
+          "question": "Which of these can affect your reaction time?",
+          "options": [
+            "A) Drugs",
+            "B) Contact lenses.",
+            "C) Tinted windows."
+          ],
+          "answer": "A) Drugs"
+        }
+      ]
+    },
+    {
+      "id": "685e06d19b4886a5793a81c8",
+      "title": "Seat belt / 2 second rule",
+      "formId": "67fc6a01ec1c4447db6aaa6d",
+      "questions": [
+        {
+          "id": "67318011edb5f0662805f0d8",
+          "question": "A passenger is exempted from wearing a seat belt if he is below",
+          "options": [
+            "A) 1.7 metres in height.",
+            "B) 1.6 metres in height.",
+            "C) 1.5 metres in height."
+          ],
+          "answer": "C) 1.5 metres in height."
+        },
+        {
+          "id": "67318f8c27aeb3ce5c571ecd",
+          "question": "Children passenger below _____ of age are required to use a child restraint.",
+          "options": [
+            "A) 10 years.",
+            "B) 9 years.",
+            "C) 8 years."
+          ],
+          "answer": "C) 8 years."
+        },
+        {
+          "id": "6731ac05c9064112eadb58e9",
+          "question": "Fastening a seat belt can",
+          "options": [
+            "A) Reduce the chances of a collision.",
+            "B) Reduce the chances of being seriously injured or killed.",
+            "C) Control your body movement when you negotiate a sharp bend."
+          ],
+          "answer": "B) Reduce the chances of being seriously injured or killed."
+        },
+        {
+          "id": "673af16f25d25160d519989c",
+          "question": "Seat belt must be worn at all times by",
+          "options": [
+            "A) the driver only.",
+            "B) the passengers only.",
+            "C) the driver as well as the passengers."
+          ],
+          "answer": "C) the driver as well as the passengers."
+        },
+        {
+          "id": "67d0eff4186c9746b6e4f9ac",
+          "question": "A child is required to use a child restraint if the child is",
+          "options": [
+            "A) 7 years old.",
+            "B) 9 years old.",
+            "C) 11 years old."
+          ],
+          "answer": "A) 7 years old."
+        },
+        {
+          "id": "67d0f0bee6c56d64f155257b",
+          "question": "The 'Two-second Rule' is a sufficient distance between your vehicle and the car in front when road condition is",
+          "options": [
+            "A) Wet.",
+            "B) Good.",
+            "C) Hazy."
+          ],
+          "answer": "B) Good."
+        },
+        {
+          "id": "67d0f1c32bd7fa4094849780",
+          "question": "You are on a clear and open road in good weather condition, the distance between you and the vehicle in front should be",
+          "options": [
+            "A) one car's length.",
+            "B) two car's length.",
+            "C) a two second time gap."
+          ],
+          "answer": "C) a two second time gap."
+        },
+        {
+          "id": "67d0f6e814ef0505bb0dd88b",
+          "question": "The Two-second Rule is a simple check to ensure",
+          "options": [
+            "A) A safe distance for you to move off from a junction.",
+            "B) A safe distance between your vehicle and the vehicle in front.",
+            "C) A safe length of time to signal before your manoeuvre."
+          ],
+          "answer": "B) A safe distance between your vehicle and the vehicle in front."
+        },
+        {
+          "id": "67d10312618e82f7e1341ea0",
+          "question": "When you are following another vehicle on a wet road, you should keep",
+          "options": [
+            "A) 2 seconds behind.",
+            "B) More than 2 seconds behind.",
+            "C) Less than 2 seconds behind."
+          ],
+          "answer": "B) More than 2 seconds behind."
+        },
+        {
+          "id": "67d10397346de42dddeed8b5",
+          "question": "The 'Two-Second Rule' of safe following distance applies to all vehicles travelling at",
+          "options": [
+            "A) slow speed only.",
+            "B) fast speed  only.",
+            "C) any speed."
+          ],
+          "answer": "C) any speed."
+        },
+        {
+          "id": "67d103dfba7c5cbd1f2e4912",
+          "question": "In order to avoid an accident with the vehicle in front while driving under normal conditions you should use the",
+          "options": [
+            "A) Two-second rule",
+            "B) Four-second rule",
+            "C) Two metre rule"
+          ],
+          "answer": "A) Two-second rule"
+        }
+      ]
+    },
+    {
+      "id": "685e0741deb0de5628f23444",
+      "title": "Flood / Headlights",
+      "formId": "67f71cb47b1d7d6a5d546e28",
+      "questions": [
+        {
+          "id": "67318011edb5f0662805f0d8",
+          "question": "After driving through flood the brakes may malfunction. In order to correct this, you must",
+          "options": [
+            "A) Stop the vehicle on a slope to allow water to flow out from the brakes.",
+            "B) Pump the brake pedal repeatedly to dry the brakes.",
+            "C) Drive at normal speed to spin-dry the brakes."
+          ],
+          "answer": "B) Pump the brake pedal repeatedly to dry the brakes."
+        },
+        {
+          "id": "67318f8c27aeb3ce5c571ecd",
+          "question": "After your vehicle passed through a flood, you should",
+          "options": [
+            "A) stop on a slope to drain water out of the brakes.",
+            "B) drive faster to allow the brakes to dry quickly.",
+            "C) apply intermittent braking to dry the brake drums at low speed."
+          ],
+          "answer": "C) apply intermittent braking to dry the brake drums at low speed."
+        },
+        {
+          "id": "6731936427aeb3ce5c57f8e8",
+          "question": "How should you deal with floods?",
+          "options": [
+            "A) Drive through as fast as possible to avoid stopping.",
+            "B) Drive through slowly in 1st gear.",
+            "C) Drive through in the highest gear."
+          ],
+          "answer": "B) Drive through slowly in 1st gear."
+        },
+        {
+          "id": "6731ac05c9064112eadb58e9",
+          "question": "If you are in doubt of the depth of flood water (whether passable to vehicles), you should",
+          "options": [
+            "A) Drive through slowly.",
+            "B) Drive through as quickly as possible.",
+            "C) Take an alternative route."
+          ],
+          "answer": "C) Take an alternative route."
+        },
+        {
+          "id": "673af16f25d25160d519989c",
+          "question": "To drive through a flood, you should increase acceleration and",
+          "options": [
+            "A) Change to a lower gear.",
+            "B) Change to a higher gear.",
+            "C) Apply half clutch."
+          ],
+          "answer": "A) Change to a lower gear."
+        },
+        {
+          "id": "67d0eff4186c9746b6e4f9ac",
+          "question": "When approaching a road that is flooded but passable to vehicles, you should",
+          "options": [
+            "A) Engage a higher gear to go through the flood.",
+            "B) Engage a lower gear to go through the flood.",
+            "C) Drive through as fast as possible."
+          ],
+          "answer": "B) Engage a lower gear to go through the flood."
+        },
+        {
+          "id": "67d0f0bee6c56d64f155257b",
+          "question": "When driving in heavy rain and passing through water, you should gently test your",
+          "options": [
+            "A) horn.",
+            "B) brakes from time to time.",
+            "C) signals."
+          ],
+          "answer": "B) brakes from time to time."
+        },
+        {
+          "id": "67d0f1c32bd7fa4094849780",
+          "question": "All drivers are required by law to switch on the vehicle's headlights whilst driving between",
+          "options": [
+            "A) 7.00 pm and 7.00 am.",
+            "B) 7.15 pm and 7.15 am.",
+            "C) 7.30 pm and 7.30 am."
+          ],
+          "answer": "A) 7.00 pm and 7.00 am."
+        },
+        {
+          "id": "67d0f6e814ef0505bb0dd88b",
+          "question": "Switching on the headlights whilst driving in heavy rain during the daytime",
+          "options": [
+            "A) Is advisable because you can be readily seen by others.",
+            "B) Is not advisable because it will shorten the battery life.",
+            "C) Is not advisable because the rain water will reflect the light."
+          ],
+          "answer": "A) Is advisable because you can be readily seen by others."
+        },
+        {
+          "id": "67d10312618e82f7e1341ea0",
+          "question": "At night, when approaching a sharp left bend you should",
+          "options": [
+            "A) Flash your headlights to attract the attention of other road user.",
+            "B) Speed up so as to pass the danger as quickly as possible.",
+            "C) Keep more to the right to have a better view."
+          ],
+          "answer": "A) Flash your headlights to attract the attention of other road user."
+        },
+        {
+          "id": "67d10397346de42dddeed8b5",
+          "question": "If the headlight of an oncoming vehicle is blinding you, you should",
+          "options": [
+            "A) turn on the high beam.",
+            "B) look to the right kerb.",
+            "C) look to the left kerb."
+          ],
+          "answer": "C) look to the left kerb."
+        },
+        {
+          "id": "67d103dfba7c5cbd1f2e4912",
+          "question": "At night you should switch on your headlights from",
+          "options": [
+            "A) 6 pm to 7 am",
+            "B) 7 pm to 6 am",
+            "C) 7 pm to 7 am"
+          ],
+          "answer": "C) 7 pm to 7 am"
+        },
+        {
+          "id": "67d10444b148cbb2a00c77d1",
+          "question": "In which situation should you switch on the high beam?",
+          "options": [
+            "A) When driving on a bumpy road",
+            "B) When there are oncoming vehicles",
+            "C) When the road is poorly lighted and there is no traffic ahead"
+          ],
+          "answer": "C) When the road is poorly lighted and there is no traffic ahead"
+        },
+        {
+          "id": "67d105b75e7738adf6626631",
+          "question": "On a sharp bend at night, to avoid dazzling oncoming traffic, you should",
+          "options": [
+            "A) Switch off your lights.",
+            "B) Dip your headlights.",
+            "C) Switch on high beam."
+          ],
+          "answer": "B) Dip your headlights."
+        },
+        {
+          "id": "67d105f9a748faa00fd55644",
+          "question": "The purpose of using dipped headlights whilst driving is to",
+          "options": [
+            "A) to save the battery's electrical energy.",
+            "B) to light up the road immediately in front of you.",
+            "C) to avoid dazzling drivers of oncoming vehicles."
+          ],
+          "answer": "C) to avoid dazzling drivers of oncoming vehicles."
+        },
+        {
+          "id": "67d1069659703608767cad4d",
+          "question": "When blinded by the headlights of an oncoming vehicle at night, you should",
+          "options": [
+            "A) Close your eyes.",
+            "B) Slow down or stop.",
+            "C) Pull down the sun visor."
+          ],
+          "answer": "B) Slow down or stop."
+        },
+        {
+          "id": "67d106d2e3673a50102712a0",
+          "question": "When driving at night, dip your headlights-",
+          "options": [
+            "A) To light up the road immediately in front you.",
+            "B) So as not to dazzle drivers of oncoming vehicles.",
+            "C) To prolong the life of the car battery."
+          ],
+          "answer": "B) So as not to dazzle drivers of oncoming vehicles."
+        },
+        {
+          "id": "67d10749a5fdc2bbf2f3f374",
+          "question": "When driving at night, you should use",
+          "options": [
+            "A) Dipped headlights.",
+            "B) High beam.",
+            "C) Side lights only."
+          ],
+          "answer": "A) Dipped headlights"
+        },
+        {
+          "id": "67d1078eba7c5cbd1f2f21e4",
+          "question": "When facing oncoming traffic at night, which lights should you use?",
+          "options": [
+            "A) Dipped headlights.",
+            "B) High beam headlights.",
+            "C) Spot lights."
+          ],
+          "answer": "A) Dipped headlights."
+        },
+        {
+          "id": "67d107fd9a9b271dd2efc94a",
+          "question": "When the oncoming car refuses to dim its headlights, you should",
+          "options": [
+            "A) Slow down and look at the left side of the kerb",
+            "B) Retaliate by turning on your high beam.",
+            "C) Maintain your speed and the headlight status."
+          ],
+          "answer": "A) Slow down and look at the left side of the kerb"
+        },
+        {
+          "id": "67ef95afc70d16cc2446db8e",
+          "question": "You should dip your headlights when",
+          "options": [
+            "A) Driving in a dark area.",
+            "B) Facing oncoming traffic.",
+            "C) Approaching a blind corner."
+          ],
+          "answer": "B) Facing oncoming traffic."
+        }
+      ]
+    }
+  ]
+}

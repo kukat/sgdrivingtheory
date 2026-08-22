@@ -60,7 +60,7 @@ export function isTestId(value: string | undefined): value is TestId {
   return value === 'btt' || value === 'ftt' || value === 'rtt';
 }
 
-function toSections(fields: FormField[]): TheoryTestSection[] {
+export function sectionsFromFields(fields: FormField[]): TheoryTestSection[] {
   return fields
     .filter((field) => typeof field.title === 'string' && field.title.trim().length > 0)
     .map((field, index) => ({
@@ -76,5 +76,5 @@ export async function loadSections(testId: TestId): Promise<TheoryTestSection[]>
     throw new Error(`Form request failed with status ${response.status}`);
   }
   const payload: unknown = await response.json();
-  return toSections(getFormFields(payload));
+  return sectionsFromFields(getFormFields(payload));
 }
