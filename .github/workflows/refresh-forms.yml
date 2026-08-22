@@ -25,6 +25,6 @@ jobs:
           node-version: 22
 
       - name: Fetch, test, and open PR or issues
-        run: npx --yes tsx@4.20.6 scripts/refresh-forms.ts
+        run: npx --yes tsx@4.20.6 --tsconfig tsconfig.scripts.json scripts/refresh-forms.ts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
