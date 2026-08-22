@@ -24,7 +24,7 @@ const USER_AGENT = 'DrivingBibleFormRefresh/1.0 (+https://github.com/kukat/sgdri
 
 type BuildResult =
   | { testId: TestId; status: 'unchanged'; catalog: FormCatalog }
-  | { testId: TestId; status: 'changed'; catalog: FormCatalog }
+  | { testId: TestId; status: 'changed'; catalog: FormCatalog; previous?: FormCatalog }
   | { testId: TestId; status: 'failed'; failures: ContractFailure[] };
 
 function run(command: string, args: string[], options?: { allowFail?: boolean }): string {
@@ -252,34 +252,45 @@ function existingPrNumber(): string | undefined {
   return raw;
 }
 
-function publishPr(changed: FormCatalog[]) {
+function publishPr(changed: Array<{ catalog: FormCatalog; previous?: FormCatalog }>) {
   run('git', ['config', 'user.name', 'github-actions[bot]']);
   run('git', ['config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com']);
   run('git', ['checkout', '-B', BRANCH]);
-  run('git', ['add', ...changed.map((catalog) => path.join('data', catalogFileName(catalog.id)))]);
+  run('git', ['add', ...changed.map((item) => path.join('data', catalogFileName(item.catalog.id)))]);
 
   const status = run('git', ['diff', '--cached', '--name-only']);
   if (!status) {
     return;
   }
 
-  const summary = changed.map(summarize).join('\n');
+  const summary = changed.map((item) => summarize(item.catalog)).join('\n');
   run('git', ['commit', '-m', 'Update theory test catalogs from Form.gov.sg', '-m', summary]);
   run('git', ['push', '--force', 'origin', BRANCH]);
 
   const body = [
-    'Form.gov.sg JSON changed and passed contract tests. Merge to publish the new catalog files.',
+    'Origin catalogs differ from the files on main and passed contract tests.',
     '',
-    '```',
-    summary,
-    '```',
+    'Merge to take origin. Close or ignore to keep `main` as-is.',
     '',
-    'Failed tests are not in this PR. They stay on the last good files and have their own issues.',
-  ].join('\n');
+    'JSON diffs are in the Files tab.',
+    '',
+  ];
+
+  for (const item of changed) {
+    body.push(`## ${item.catalog.id}`, '', summarize(item.catalog));
+    if (item.previous) {
+      body.push(`Published: ${summarize(item.previous)}`, '');
+      const diff = diffCatalogs(item.previous, item.catalog);
+      if (diff.length > 0) {
+        body.push(formatFailures(diff), '');
+      }
+    }
+  }
 
   const open = existingPrNumber();
+  const bodyText = body.join('\n');
   if (open) {
-    run('gh', ['pr', 'edit', open, '--title', 'Update theory test catalogs from Form.gov.sg', '--body', body]);
+    run('gh', ['pr', 'edit', open, '--title', 'Update theory test catalogs from Form.gov.sg', '--body', bodyText]);
     return;
   }
 
@@ -289,7 +300,7 @@ function publishPr(changed: FormCatalog[]) {
     '--title',
     'Update theory test catalogs from Form.gov.sg',
     '--body',
-    body,
+    bodyText,
     '--head',
     BRANCH,
   ]);
@@ -315,22 +326,16 @@ async function main() {
     const previous = loadPrevious(testId);
     try {
       const catalog = await buildCatalog(testId, cache);
-      const failures = [
-        ...checkCatalog(catalog, previous),
-        ...(previous ? diffCatalogs(previous, catalog) : []),
-      ];
+      const failures = checkCatalog(catalog, previous);
       if (failures.length > 0) {
         results.push({ testId, status: 'failed', failures });
         continue;
       }
-      results.push({
-        testId,
-        status:
-          previous && catalogFingerprint(previous) === catalogFingerprint(catalog)
-            ? 'unchanged'
-            : 'changed',
-        catalog,
-      });
+      if (previous && catalogFingerprint(previous) === catalogFingerprint(catalog)) {
+        results.push({ testId, status: 'unchanged', catalog });
+        continue;
+      }
+      results.push({ testId, status: 'changed', catalog, previous });
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
       results.push({
@@ -341,11 +346,11 @@ async function main() {
     }
   }
 
-  const changed = results.filter((result) => result.status === 'changed').map((result) => result.catalog);
+  const changed = results.filter((result) => result.status === 'changed');
   const failed = results.filter((result) => result.status === 'failed');
 
-  for (const catalog of changed) {
-    writeCatalog(catalog);
+  for (const result of changed) {
+    writeCatalog(result.catalog);
   }
 
   writeReport(results);
