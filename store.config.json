@@ -53,8 +53,8 @@
           "riding"
         ],
         "releaseNotes": "First release. BTT, FTT, and RTT section practice, plus official handbook PDFs.",
-        "supportUrl": "https://github.com/kukat/sgdrivingtheory/issues",
-        "privacyPolicyUrl": "https://github.com/kukat/sgdrivingtheory/blob/main/store/PRIVACY.md"
+        "supportUrl": "https://driving-bible.cyao.win/",
+        "privacyPolicyUrl": "https://driving-bible.cyao.win/privacy/"
       },
       "zh-Hans": {
         "title": "新加坡驾考宝典",
@@ -73,8 +73,8 @@
           "摩托车"
         ],
         "releaseNotes": "首个版本。支持 BTT、FTT、RTT 章节练习，以及官方 Handbook PDF。",
-        "supportUrl": "https://github.com/kukat/sgdrivingtheory/issues",
-        "privacyPolicyUrl": "https://github.com/kukat/sgdrivingtheory/blob/main/store/PRIVACY.md"
+        "supportUrl": "https://driving-bible.cyao.win/",
+        "privacyPolicyUrl": "https://driving-bible.cyao.win/privacy/"
       }
     }
   }

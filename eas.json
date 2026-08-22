@@ -22,6 +22,10 @@
         "appName": "Driving Bible",
         "language": "en-US",
         "metadataPath": "./store.config.json"
+      },
+      "android": {
+        "track": "internal",
+        "releaseStatus": "completed"
       }
     }
   }

@@ -1,6 +1,8 @@
 # Privacy Policy for Driving Bible
 
-Last updated: 20 August 2026
+Canonical copy: https://driving-bible.cyao.win/privacy/
+
+Last updated: 22 August 2026
 
 Driving Bible is a Singapore driving theory practice app for BTT, FTT, and RTT.
 
