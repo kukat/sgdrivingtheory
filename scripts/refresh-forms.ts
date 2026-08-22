@@ -13,7 +13,7 @@ import {
 import { getFormFields, getQuizQuestions } from '@/lib/form-gov';
 import { sectionsFromFields, TEST_IDS, TESTS, type TestId } from '@/lib/tests';
 
-import { checkCatalog, type ContractFailure } from './form-contract';
+import { catalogFingerprint, checkCatalog, diffCatalogs, type ContractFailure } from './form-contract';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 const BRANCH = 'chore/form-data-refresh';
@@ -315,14 +315,20 @@ async function main() {
     const previous = loadPrevious(testId);
     try {
       const catalog = await buildCatalog(testId, cache);
-      const failures = checkCatalog(catalog, previous);
+      const failures = [
+        ...checkCatalog(catalog, previous),
+        ...(previous ? diffCatalogs(previous, catalog) : []),
+      ];
       if (failures.length > 0) {
         results.push({ testId, status: 'failed', failures });
         continue;
       }
       results.push({
         testId,
-        status: previous?.contentHash === catalog.contentHash ? 'unchanged' : 'changed',
+        status:
+          previous && catalogFingerprint(previous) === catalogFingerprint(catalog)
+            ? 'unchanged'
+            : 'changed',
         catalog,
       });
     } catch (error) {
